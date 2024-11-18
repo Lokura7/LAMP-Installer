@@ -1,0 +1,51 @@
+LAMP-Installer/
+│
+├── docs/                            # Documentación detallada del proyecto
+│   ├── SYSTEM_OVERVIEW.md            # Descripción general del sistema y arquitectura
+│   ├── INSTALLATION_GUIDE.md         # Guía detallada de instalación
+│   ├── DEVELOPER_GUIDE.md            # Guía para desarrolladores
+│   ├── USER_MANUAL.md                # Manual para usuarios finales
+│   ├── *API_REFERENCE.md             # Referencia detallada para integraciones o API
+│   └── TROUBLESHOOTING.md            # Solución de problemas comunes
+│
+├── update/                          # Scripts dedicados a la actualización de servicios
+│   ├── apache_update.sh              # Script para actualizar Apache
+│   ├── mysql_update.sh               # Script para actualizar MySQL/MariaDB
+│   ├── php_update.sh                 # Script para actualizar PHP
+│   ├── phpmyadmin_update.sh          # Script para actualizar phpMyAdmin
+│   ├── gufw_update.sh                # Script para actualizar Gufw
+│   └── update_full_stack.sh          # Script para actualizar todo el stack LAMP
+│
+├── config/                          # Scripts para configuración y optimización de servicios
+│   ├── apache_config.sh             # Script para configurar Apache
+│   ├── mysql_config.sh              # Script para configurar MySQL/MariaDB
+│   ├── php_config.sh                # Script para configurar PHP
+│   ├── phpmyadmin_config.sh         # Script para configurar phpMyAdmin
+│   └── gufw_config.sh               # Script para configurar Gufw
+│             
+│
+├── credentials/                     # Carpeta para manejar credenciales y configuraciones sensibles
+│   ├── db_credentials.sh            # Almacena y gestiona credenciales de la base de datos
+│   ├── system_credentials.sh        # Almacena credenciales del sistema (usuario/contraseña)
+│   ├── config_summary.sh            # Resumen de las configuraciones actuales (servidores, puertos, etc.)
+│   └── store_credentials.sh         # Almacena las credenciales de instalación en un archivo seguro
+│
+├── logs/                            # Carpeta para almacenar registros de operaciones
+│   ├── installation_log.txt         # Registros de instalación
+│   ├── update_log.txt               # Registros de actualización
+│   ├── uninstall_log.txt            # Registros de desinstalación
+│   ├── error_log.txt                # Registros de errores
+│   └── activity_log.txt             # Registros de actividades generales
+│
+├── scripts/                         # Scripts auxiliares para tareas generales
+│   ├── check_dependencies.sh        # Verifica dependencias necesarias para la instalación
+│   ├── validate_install.sh          # Valida que los servicios estén instalados correctamente
+│   ├── restart_services.sh          # Reinicia servicios después de cambios o configuraciones
+│   ├── optimize_services.sh         # Optimiza los servicios del stack LAMP
+│   ├── configure_system.sh          # Configura el sistema para optimizar el rendimiento
+│   └── cleanup.sh                   # Elimina archivos temporales y de caché
+│
+├── .gitignore                       # Archivos y carpetas que se deben ignorar por Git (logs, archivos temporales, etc.)
+├── LICENSE                          # Archivo de licencia del proyecto
+├── README.md                        # Archivo README con información básica del proyecto
+└── setup.sh                         # Script principal para facilitar la instalación del stack completo
